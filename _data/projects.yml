@@ -1,0 +1,24 @@
+- name: LilGPT
+  category: Language models
+  description: A small GPT implementation built to understand tokenization, embeddings, attention, transformer blocks, training, and autoregressive generation.
+  stack: Python · Transformers · Deep Learning
+  github: https://github.com/singularbek/lil_gpt/
+  writeup:
+- name: Lil Torch (not a rapper)
+  category: Deep learning tools
+  description: A minimal PyTorch-inspired deep learning framework exploring tensors, automatic differentiation, computational graphs, modules, and optimization.
+  stack: Python · Autodiff · Systems
+  github: https://github.com/singularbek/lil-torch/
+  writeup:
+- name: Natural Selection 2D
+  category: Reinforcement learning · Evolution
+  description: An experimental computational ecosystem where agents evolve and learn to survive in a 2D world using neural-network policies shaped by evolutionary fitness.
+  stack: Python · Simulation · Evolutionary computation
+  github: https://github.com/singularbek/natural_selection_2D
+  writeup:
+# - name: Complex Systems Laboratory
+#   category: Experiments
+#   description: A placeholder for future experiments in simulation, emergence, dynamical systems, and computation.
+#   stack: Notes · Simulation · Research
+#   github:
+#   writeup:

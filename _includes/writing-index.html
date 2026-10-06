@@ -1,0 +1,2 @@
+<div class="page-lede"><p class="label">Writing</p><h1>Essays, observations, and questions.</h1><p>A collection of longer thoughts on software, AI, systems, and the ideas that make building them worthwhile.</p></div>
+<div class="writing-list writing-list-page">{% for post in site.posts %}{% include post-card.html post=post index=forloop.index %}{% else %}<p class="empty-state">No essays yet. Add a markdown file to <code>_posts/</code> to begin.</p>{% endfor %}</div>

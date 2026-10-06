@@ -1,0 +1,51 @@
+title: Heruy
+name: Bereket Atakilt
+email: bereket.atakilt1993@gmail.com
+phone: "+251938844973"
+description: >-
+  Bereket Atakilt / Heruy — backend engineering, AI/ML, and complex systems.
+url: "https://heruy.com"
+baseurl: ""
+timezone: Africa/Addis_Ababa
+logo: /assets/images/ouroboros.png
+permalink: /writing/:title/
+excerpt_separator: "<!--more-->"
+
+github_username: singularbek
+linkedin_username: bereketatakilt
+x_username: singularbek
+telegram_username: beki_314
+whatsapp_phone: "251938844973"
+resume_url: "https://docs.google.com/document/d/1Ey0zITcBjWh5lcL89ctkRuW2P5cuYEgbfmZ3-38yhaQ/edit?usp=sharing"
+geez_numbers: [፩, ፪, ፫, ፬, ፭, ፮, ፯, ፰, ፱, ፲]
+
+header_pages:
+  - about.md
+  - projects.md
+  - writing.md
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Bereket Atakilt
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - vendor/

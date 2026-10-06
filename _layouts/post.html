@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="wrapper post-page">
+  <header class="post-header">
+    <p class="label">{{ page.categories | first | default: "Essay" }}</p>
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.reading_time %}<span>{{ page.reading_time }}</span>{% endif %}
+    </div>
+  </header>
+
+  <!-- <figure class="post-cover{% unless page.image %} post-cover-placeholder{% endunless %}">
+    {% if page.image %}
+      <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: page.title | escape }}">
+    {% else %}
+      <span class="placeholder-art" aria-hidden="true"><span>{{ page.title }}</span><i></i><b>01</b></span>
+      <figcaption class="sr-only">Cover image placeholder; add an image path to this post's front matter.</figcaption>
+    {% endif %}
+  </figure> -->
+
+  <div class="post-body">{{ content }}</div>
+  {% if page.tags %}<div class="tag-row" aria-label="Tags">{% for tag in page.tags %}<span>{{ tag }}</span>{% endfor %}</div>{% endif %}
+
+  {% if page.previous or page.next %}
+    <nav class="post-nav" aria-label="More writing">
+      {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><small>Previous</small>{{ page.previous.title }}</a>{% else %}<span></span>{% endif %}
+      {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><small>Next</small>{{ page.next.title }}</a>{% endif %}
+    </nav>
+  {% endif %}
+</article>
